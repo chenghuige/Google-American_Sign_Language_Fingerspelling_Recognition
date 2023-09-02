@@ -13,9 +13,9 @@ sh run-all.sh
 cd ..   
 # train with train&sup dataset for 400 epochs  
 cd src  
-sh run.sh flags/final-17layers --ep=400 --online  
+sh run.sh flags/final-17layers --ep=400 --online --wandb=0  
 # fintune with train dataset only for 10 epochs  
-sh run.sh flags/final-17layers --ep=400 --finetune --online  
+sh run.sh flags/final-17layers --ep=400 --finetune --online --wandb=0    
 # convert torch to keras then to tflite   
 ./scripts/eval-converts.sh  final-17layers.ep-400.finetune   
 
