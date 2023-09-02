@@ -1,0 +1,14 @@
+2023-08-30 00:10:58 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/heuz0jip/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None
+2023-08-30 00:26:19 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/u86e0wd4/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None
+2023-08-30 02:26:10 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/heuz0jip/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None
+2023-08-30 02:38:28 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/u86e0wd4/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None
+2023-08-30 04:49:44 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/u86e0wd4/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None
+2023-08-30 07:01:48 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/u86e0wd4/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None
+2023-08-30 09:15:27 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/chenghuige/aslfr/u86e0wd4/file_stream (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)')))
+NoneType: None

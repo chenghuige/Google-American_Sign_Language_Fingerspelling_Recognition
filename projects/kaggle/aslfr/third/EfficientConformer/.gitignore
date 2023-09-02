@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+.vscode
+.DS_Store
+env/*
+datasets/*
+callbacks/*

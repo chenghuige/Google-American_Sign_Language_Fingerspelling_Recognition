@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nobuco"
+version = "0.6.4"
+description = "Pytorch to Tensorflow conversion made intuitive"
+readme = "README.md"
+authors = [
+  { name="Alexander Lutsenko", email="lex.lutsenko@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["pytorch", "tensorflow", "keras", "converter"]
+dependencies = [
+    "sty >= 1.0.0",
+    "numpy"
+]
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/AlexanderLutsenko/nobuco"
+"Bug Tracker" = "https://github.com/AlexanderLutsenko/nobuco/issues"

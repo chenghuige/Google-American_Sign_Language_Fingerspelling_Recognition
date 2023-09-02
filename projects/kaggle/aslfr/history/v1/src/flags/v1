@@ -1,0 +1,5 @@
+--tf_dataset
+--gpus=1
+--norm_frames 
+--label_smoothing=0.25
+

@@ -1,0 +1,7 @@
+# tensorflow==2.5
+wandb
+huggingface-hub
+soundfile
+jiwer
+typeguard
+tensorflow_hub

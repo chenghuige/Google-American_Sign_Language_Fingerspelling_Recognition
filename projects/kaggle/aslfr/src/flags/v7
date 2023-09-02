@@ -1,0 +1,12 @@
+--tf_dataset
+--gpus=1
+--norm_frames 
+--label_smoothing=0.25
+--wd_ratio=0.05
+--dominant_emb=0
+--encoder_layers=4
+--decoder_layers=1
+--mhatt_depth_ratio=0.5
+--mhatt_drop=0.2 
+--cls_drop=0.1
+

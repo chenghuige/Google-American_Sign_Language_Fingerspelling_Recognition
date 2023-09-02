@@ -1,0 +1,20 @@
+.DS_Store
+*.pyc
+*.log
+__pycache__
+.dropbox.attr
+.ftpconfig
+.nfs*
+.idea
+.pytest_cache
+.vscode
+*.done
+.coverage
+coverage.xml
+neural_sp.egg-info
+wandb
+
+# CI test
+examples/ci_test/data
+examples/ci_test/results
+examples/ci_test/sample

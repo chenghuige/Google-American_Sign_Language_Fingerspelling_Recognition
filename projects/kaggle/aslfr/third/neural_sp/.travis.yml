@@ -1,0 +1,46 @@
+notifications:
+  email: false
+
+dist: xenial
+
+language: python
+
+os: linux
+
+python:
+  - "3.7"
+
+cache:
+  - pip
+  - ccache
+
+sudo: false
+
+install:
+  - travis_retry ./test/install.sh
+
+script:
+  - ./test/test_python.sh
+  - ./test/test_training.sh
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+env:
+  - PYTORCH_VERSION=1.0.0 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.1.0 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.3.0 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.4.0 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.5.0 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.6.0 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.7.1 CC=gcc-7 CXX=g++-7
+  - PYTORCH_VERSION=1.8.1 CC=gcc-7 CXX=g++-7
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - cmake
+      - g++-7
+      - sox

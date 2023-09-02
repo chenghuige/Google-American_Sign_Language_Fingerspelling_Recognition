@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Overview: module code &mdash; Openspeech v0.3.0 documentation</title>
+
+
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+</head>
+
+<body class="wy-body-for-nav">
+
+
+  <div class="wy-grid-for-nav">
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+
+            <a href="../index.html" class="icon icon-home"> Openspeech
+
+
+
+          </a>
+
+
+
+
+
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+
+
+
+
+
+
+              <p class="caption"><span class="caption-text">GETTING STARTED</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notes/intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/hydra_configs.html">Openspeech’s Hydra configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/configs.html">Openspeech’s configurations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">OPENSPEECH MODELS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../models/Openspeech Model.html">Openspeech Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../models/Openspeech CTC Model.html">Openspeech CTC Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../models/Openspeech Encoder Decoder Model.html">Openspeech Encoder Decoder Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../models/Openspeech Transducer Model.html">Openspeech Transducer Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../models/Openspeech Language Model.html">Openspeech Language Model</a></li>
+</ul>
+<p class="caption"><span class="caption-text">MODEL ARCHITECTURES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/Conformer.html">Conformer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/ContextNet.html">ContextNet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/DeepSpeech2.html">DeepSpeech2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/Jasper.html">Jasper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/Listen Attend Spell.html">Listen Attend Spell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/LSTM LM.html">LSTM Language Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/QuartzNet.html">QuartzNet Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/RNN Transducer.html">RNN Transducer Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/Transformer.html">Transformer Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/Transformer LM.html">Transformer Language Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architectures/Transformer Transducer.html">Transformer Transducer Model</a></li>
+</ul>
+<p class="caption"><span class="caption-text">CORPUS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../corpus/AISHELL-1.html">AISHELL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../corpus/KsponSpeech.html">KsponSpeech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../corpus/LibriSpeech.html">LibriSpeech</a></li>
+</ul>
+<p class="caption"><span class="caption-text">LIBRARY REFERENCE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Callback.html">Callback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Criterion.html">Criterion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Data Augment.html">Data Augment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Feature Transform.html">Feature Transform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Datasets.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Data Loaders.html">Data Loaders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Decoders.html">Decoders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Encoders.html">Encoders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Optim.html">Optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Tokenizers.html">Tokenizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Metric.html">Metric</a></li>
+</ul>
+
+
+
+        </div>
+
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+      <nav class="wy-nav-top" aria-label="top navigation">
+
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Openspeech</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+
+        <div class="rst-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+
+      <li>Overview: module code</li>
+
+
+      <li class="wy-breadcrumbs-aside">
+
+      </li>
+
+  </ul>
+
+
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+
+  <h1>All modules for which code is available</h1>
+<ul><li><a href="openspeech/callbacks.html">openspeech.callbacks</a></li>
+<li><a href="openspeech/criterion/cross_entropy/configuration.html">openspeech.criterion.cross_entropy.configuration</a></li>
+<li><a href="openspeech/criterion/cross_entropy/cross_entropy.html">openspeech.criterion.cross_entropy.cross_entropy</a></li>
+<li><a href="openspeech/criterion/ctc/configuration.html">openspeech.criterion.ctc.configuration</a></li>
+<li><a href="openspeech/criterion/ctc/ctc.html">openspeech.criterion.ctc.ctc</a></li>
+<li><a href="openspeech/criterion/joint_ctc_cross_entropy/configuration.html">openspeech.criterion.joint_ctc_cross_entropy.configuration</a></li>
+<li><a href="openspeech/criterion/joint_ctc_cross_entropy/joint_ctc_cross_entropy.html">openspeech.criterion.joint_ctc_cross_entropy.joint_ctc_cross_entropy</a></li>
+<li><a href="openspeech/criterion/label_smoothed_cross_entropy/configuration.html">openspeech.criterion.label_smoothed_cross_entropy.configuration</a></li>
+<li><a href="openspeech/criterion/label_smoothed_cross_entropy/label_smoothed_cross_entropy.html">openspeech.criterion.label_smoothed_cross_entropy.label_smoothed_cross_entropy</a></li>
+<li><a href="openspeech/criterion/perplexity/configuration.html">openspeech.criterion.perplexity.configuration</a></li>
+<li><a href="openspeech/criterion/perplexity/perplexity.html">openspeech.criterion.perplexity.perplexity</a></li>
+<li><a href="openspeech/criterion/transducer/configuration.html">openspeech.criterion.transducer.configuration</a></li>
+<li><a href="openspeech/criterion/transducer/transducer.html">openspeech.criterion.transducer.transducer</a></li>
+<li><a href="openspeech/data/audio/augment.html">openspeech.data.audio.augment</a></li>
+<li><a href="openspeech/data/audio/data_loader.html">openspeech.data.audio.data_loader</a></li>
+<li><a href="openspeech/data/audio/dataset.html">openspeech.data.audio.dataset</a></li>
+<li><a href="openspeech/data/audio/filter_bank/configuration.html">openspeech.data.audio.filter_bank.configuration</a></li>
+<li><a href="openspeech/data/audio/filter_bank/filter_bank.html">openspeech.data.audio.filter_bank.filter_bank</a></li>
+<li><a href="openspeech/data/audio/load.html">openspeech.data.audio.load</a></li>
+<li><a href="openspeech/data/audio/melspectrogram/configuration.html">openspeech.data.audio.melspectrogram.configuration</a></li>
+<li><a href="openspeech/data/audio/melspectrogram/melspectrogram.html">openspeech.data.audio.melspectrogram.melspectrogram</a></li>
+<li><a href="openspeech/data/audio/mfcc/configuration.html">openspeech.data.audio.mfcc.configuration</a></li>
+<li><a href="openspeech/data/audio/mfcc/mfcc.html">openspeech.data.audio.mfcc.mfcc</a></li>
+<li><a href="openspeech/data/audio/spectrogram/configuration.html">openspeech.data.audio.spectrogram.configuration</a></li>
+<li><a href="openspeech/data/audio/spectrogram/spectrogram.html">openspeech.data.audio.spectrogram.spectrogram</a></li>
+<li><a href="openspeech/data/sampler.html">openspeech.data.sampler</a></li>
+<li><a href="openspeech/data/text/data_loader.html">openspeech.data.text.data_loader</a></li>
+<li><a href="openspeech/data/text/dataset.html">openspeech.data.text.dataset</a></li>
+<li><a href="openspeech/datasets/aishell/lit_data_module.html">openspeech.datasets.aishell.lit_data_module</a></li>
+<li><a href="openspeech/datasets/ksponspeech/lit_data_module.html">openspeech.datasets.ksponspeech.lit_data_module</a></li>
+<li><a href="openspeech/datasets/librispeech/lit_data_module.html">openspeech.datasets.librispeech.lit_data_module</a></li>
+<li><a href="openspeech/decoders/lstm_attention_decoder.html">openspeech.decoders.lstm_attention_decoder</a></li>
+<li><a href="openspeech/decoders/openspeech_decoder.html">openspeech.decoders.openspeech_decoder</a></li>
+<li><a href="openspeech/decoders/rnn_transducer_decoder.html">openspeech.decoders.rnn_transducer_decoder</a></li>
+<li><a href="openspeech/decoders/transformer_decoder.html">openspeech.decoders.transformer_decoder</a></li>
+<li><a href="openspeech/decoders/transformer_transducer_decoder.html">openspeech.decoders.transformer_transducer_decoder</a></li>
+<li><a href="openspeech/encoders/conformer_encoder.html">openspeech.encoders.conformer_encoder</a></li>
+<li><a href="openspeech/encoders/contextnet_encoder.html">openspeech.encoders.contextnet_encoder</a></li>
+<li><a href="openspeech/encoders/convolutional_lstm_encoder.html">openspeech.encoders.convolutional_lstm_encoder</a></li>
+<li><a href="openspeech/encoders/convolutional_transformer_encoder.html">openspeech.encoders.convolutional_transformer_encoder</a></li>
+<li><a href="openspeech/encoders/deepspeech2.html">openspeech.encoders.deepspeech2</a></li>
+<li><a href="openspeech/encoders/jasper.html">openspeech.encoders.jasper</a></li>
+<li><a href="openspeech/encoders/lstm_encoder.html">openspeech.encoders.lstm_encoder</a></li>
+<li><a href="openspeech/encoders/openspeech_encoder.html">openspeech.encoders.openspeech_encoder</a></li>
+<li><a href="openspeech/encoders/quartznet.html">openspeech.encoders.quartznet</a></li>
+<li><a href="openspeech/encoders/rnn_transducer_encoder.html">openspeech.encoders.rnn_transducer_encoder</a></li>
+<li><a href="openspeech/encoders/transformer_encoder.html">openspeech.encoders.transformer_encoder</a></li>
+<li><a href="openspeech/encoders/transformer_transducer_encoder.html">openspeech.encoders.transformer_transducer_encoder</a></li>
+<li><a href="openspeech/metrics.html">openspeech.metrics</a></li>
+<li><a href="openspeech/models/conformer/configurations.html">openspeech.models.conformer.configurations</a></li>
+<li><a href="openspeech/models/conformer/model.html">openspeech.models.conformer.model</a></li>
+<li><a href="openspeech/models/contextnet/configurations.html">openspeech.models.contextnet.configurations</a></li>
+<li><a href="openspeech/models/contextnet/model.html">openspeech.models.contextnet.model</a></li>
+<li><a href="openspeech/models/deepspeech2/configurations.html">openspeech.models.deepspeech2.configurations</a></li>
+<li><a href="openspeech/models/deepspeech2/model.html">openspeech.models.deepspeech2.model</a></li>
+<li><a href="openspeech/models/jasper/configurations.html">openspeech.models.jasper.configurations</a></li>
+<li><a href="openspeech/models/jasper/model.html">openspeech.models.jasper.model</a></li>
+<li><a href="openspeech/models/listen_attend_spell/configurations.html">openspeech.models.listen_attend_spell.configurations</a></li>
+<li><a href="openspeech/models/listen_attend_spell/model.html">openspeech.models.listen_attend_spell.model</a></li>
+<li><a href="openspeech/models/lstm_lm/configurations.html">openspeech.models.lstm_lm.configurations</a></li>
+<li><a href="openspeech/models/lstm_lm/model.html">openspeech.models.lstm_lm.model</a></li>
+<li><a href="openspeech/models/openspeech_ctc_model.html">openspeech.models.openspeech_ctc_model</a></li>
+<li><a href="openspeech/models/openspeech_encoder_decoder_model.html">openspeech.models.openspeech_encoder_decoder_model</a></li>
+<li><a href="openspeech/models/openspeech_language_model.html">openspeech.models.openspeech_language_model</a></li>
+<li><a href="openspeech/models/openspeech_model.html">openspeech.models.openspeech_model</a></li>
+<li><a href="openspeech/models/openspeech_transducer_model.html">openspeech.models.openspeech_transducer_model</a></li>
+<li><a href="openspeech/models/quartznet/configurations.html">openspeech.models.quartznet.configurations</a></li>
+<li><a href="openspeech/models/quartznet/model.html">openspeech.models.quartznet.model</a></li>
+<li><a href="openspeech/models/rnn_transducer/configurations.html">openspeech.models.rnn_transducer.configurations</a></li>
+<li><a href="openspeech/models/rnn_transducer/model.html">openspeech.models.rnn_transducer.model</a></li>
+<li><a href="openspeech/models/transformer/configurations.html">openspeech.models.transformer.configurations</a></li>
+<li><a href="openspeech/models/transformer/model.html">openspeech.models.transformer.model</a></li>
+<li><a href="openspeech/models/transformer_lm/configurations.html">openspeech.models.transformer_lm.configurations</a></li>
+<li><a href="openspeech/models/transformer_lm/model.html">openspeech.models.transformer_lm.model</a></li>
+<li><a href="openspeech/models/transformer_transducer/configurations.html">openspeech.models.transformer_transducer.configurations</a></li>
+<li><a href="openspeech/models/transformer_transducer/model.html">openspeech.models.transformer_transducer.model</a></li>
+<li><a href="openspeech/modules/add_normalization.html">openspeech.modules.add_normalization</a></li>
+<li><a href="openspeech/modules/additive_attention.html">openspeech.modules.additive_attention</a></li>
+<li><a href="openspeech/modules/batchnorm_relu_rnn.html">openspeech.modules.batchnorm_relu_rnn</a></li>
+<li><a href="openspeech/modules/conformer_attention_module.html">openspeech.modules.conformer_attention_module</a></li>
+<li><a href="openspeech/modules/conformer_block.html">openspeech.modules.conformer_block</a></li>
+<li><a href="openspeech/modules/conformer_convolution_module.html">openspeech.modules.conformer_convolution_module</a></li>
+<li><a href="openspeech/modules/conformer_feed_forward_module.html">openspeech.modules.conformer_feed_forward_module</a></li>
+<li><a href="openspeech/modules/conv2d_extractor.html">openspeech.modules.conv2d_extractor</a></li>
+<li><a href="openspeech/modules/conv2d_subsampling.html">openspeech.modules.conv2d_subsampling</a></li>
+<li><a href="openspeech/modules/conv_base.html">openspeech.modules.conv_base</a></li>
+<li><a href="openspeech/modules/conv_group_shuffle.html">openspeech.modules.conv_group_shuffle</a></li>
+<li><a href="openspeech/modules/deepspeech2_extractor.html">openspeech.modules.deepspeech2_extractor</a></li>
+<li><a href="openspeech/modules/depthwise_conv1d.html">openspeech.modules.depthwise_conv1d</a></li>
+<li><a href="openspeech/modules/dot_product_attention.html">openspeech.modules.dot_product_attention</a></li>
+<li><a href="openspeech/modules/glu.html">openspeech.modules.glu</a></li>
+<li><a href="openspeech/modules/jasper_block.html">openspeech.modules.jasper_block</a></li>
+<li><a href="openspeech/modules/jasper_subblock.html">openspeech.modules.jasper_subblock</a></li>
+<li><a href="openspeech/modules/location_aware_attention.html">openspeech.modules.location_aware_attention</a></li>
+<li><a href="openspeech/modules/mask.html">openspeech.modules.mask</a></li>
+<li><a href="openspeech/modules/mask_conv1d.html">openspeech.modules.mask_conv1d</a></li>
+<li><a href="openspeech/modules/mask_conv2d.html">openspeech.modules.mask_conv2d</a></li>
+<li><a href="openspeech/modules/multi_head_attention.html">openspeech.modules.multi_head_attention</a></li>
+<li><a href="openspeech/modules/pointwise_conv1d.html">openspeech.modules.pointwise_conv1d</a></li>
+<li><a href="openspeech/modules/positional_encoding.html">openspeech.modules.positional_encoding</a></li>
+<li><a href="openspeech/modules/positionwise_feed_forward.html">openspeech.modules.positionwise_feed_forward</a></li>
+<li><a href="openspeech/modules/quartznet_block.html">openspeech.modules.quartznet_block</a></li>
+<li><a href="openspeech/modules/quartznet_subblock.html">openspeech.modules.quartznet_subblock</a></li>
+<li><a href="openspeech/modules/relative_multi_head_attention.html">openspeech.modules.relative_multi_head_attention</a></li>
+<li><a href="openspeech/modules/residual_connection_module.html">openspeech.modules.residual_connection_module</a></li>
+<li><a href="openspeech/modules/swish.html">openspeech.modules.swish</a></li>
+<li><a href="openspeech/modules/time_channel_separable_conv1d.html">openspeech.modules.time_channel_separable_conv1d</a></li>
+<li><a href="openspeech/modules/transformer_embedding.html">openspeech.modules.transformer_embedding</a></li>
+<li><a href="openspeech/modules/vgg_extractor.html">openspeech.modules.vgg_extractor</a></li>
+<li><a href="openspeech/modules/wrapper.html">openspeech.modules.wrapper</a></li>
+<li><a href="openspeech/optim/optimizer.html">openspeech.optim.optimizer</a></li>
+<li><a href="openspeech/optim/scheduler/lr_scheduler.html">openspeech.optim.scheduler.lr_scheduler</a></li>
+<li><a href="openspeech/optim/scheduler/reduce_lr_on_plateau_scheduler.html">openspeech.optim.scheduler.reduce_lr_on_plateau_scheduler</a></li>
+<li><a href="openspeech/optim/scheduler/transformer_lr_scheduler.html">openspeech.optim.scheduler.transformer_lr_scheduler</a></li>
+<li><a href="openspeech/optim/scheduler/tri_stage_lr_scheduler.html">openspeech.optim.scheduler.tri_stage_lr_scheduler</a></li>
+<li><a href="openspeech/optim/scheduler/warmup_reduce_lr_on_plateau_scheduler.html">openspeech.optim.scheduler.warmup_reduce_lr_on_plateau_scheduler</a></li>
+<li><a href="openspeech/optim/scheduler/warmup_scheduler.html">openspeech.optim.scheduler.warmup_scheduler</a></li>
+<li><a href="openspeech/search/beam_search_base.html">openspeech.search.beam_search_base</a></li>
+<li><a href="openspeech/search/beam_search_ctc.html">openspeech.search.beam_search_ctc</a></li>
+<li><a href="openspeech/search/beam_search_lstm.html">openspeech.search.beam_search_lstm</a></li>
+<li><a href="openspeech/search/beam_search_rnn_transducer.html">openspeech.search.beam_search_rnn_transducer</a></li>
+<li><a href="openspeech/search/beam_search_transformer.html">openspeech.search.beam_search_transformer</a></li>
+<li><a href="openspeech/search/beam_search_transformer_transducer.html">openspeech.search.beam_search_transformer_transducer</a></li>
+<li><a href="openspeech/search/ensemble_search.html">openspeech.search.ensemble_search</a></li>
+<li><a href="openspeech/tokenizers/aishell/character.html">openspeech.tokenizers.aishell.character</a></li>
+<li><a href="openspeech/tokenizers/ksponspeech/character.html">openspeech.tokenizers.ksponspeech.character</a></li>
+<li><a href="openspeech/tokenizers/ksponspeech/grapheme.html">openspeech.tokenizers.ksponspeech.grapheme</a></li>
+<li><a href="openspeech/tokenizers/ksponspeech/subword.html">openspeech.tokenizers.ksponspeech.subword</a></li>
+<li><a href="openspeech/tokenizers/librispeech/character.html">openspeech.tokenizers.librispeech.character</a></li>
+<li><a href="openspeech/tokenizers/librispeech/subword.html">openspeech.tokenizers.librispeech.subword</a></li>
+<li><a href="openspeech/tokenizers/tokenizer.html">openspeech.tokenizers.tokenizer</a></li>
+</ul>
+
+           </div>
+
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Kim, Soohwan and Ha, Sangchun and Cho, Soyoung.
+
+    </p>
+  </div>
+
+
+
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+
+
+
+
+
+</body>
+</html>
